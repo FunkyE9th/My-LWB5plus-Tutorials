@@ -12,7 +12,7 @@
 
 2. Setup
 
-   ![](C:\GitHub\My-LWB5plus-Tutorials\images\dongle\Setup.PNG)
+   ![](../images/dongle/Setup.PNG)
 
    
 
