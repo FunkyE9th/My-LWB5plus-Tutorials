@@ -25,16 +25,30 @@
 3. Re-source your build environment. NOTE: For this tutorial, our project folder will be in *~/projects/lwb5p-imx8p* and the build directory is *build-imx8p-wayland*.
 
    ```
-   cd ~/projects/lwb5p-imx8p
-   source setup-environment build-imx8p-wayland 
+   cd ~/projects/lwb5p-imx8mp
+   source setup-environment build-imx8mp-wayland 
    ```
 
    
 
 4. Modify local.conf file
 
-5. Modify the
+5. Modify bblayers.comf 
 
-6. 77
+6. Clone meta laird cp
 
-7. 
+7. Modify the bb iagem
+
+8. Modify menuconfig
+
+9. build the project
+
+10. create SD card
+
+11. Boot device
+
+12. Test WiFi
+
+13. Test Bluetooth
+
+14. 
