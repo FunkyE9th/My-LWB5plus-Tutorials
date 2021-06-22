@@ -10,9 +10,9 @@
 
    - i.MX 8M Plus EVK (Part No. 8MPLUSLPD4-EVK)
 
-   - Linux PC with a Yocto Build Environment. As a prerequisite, we are going to assume that you know how to setup a Yocto build environment. This is covered well on NXP's documentation (*see i.MX_Yocto_Project_User's_Guide.pdf Rev. L5.4.70_2.3.0 — 31 December 2020*); so we will not cover it here. We will focus on how to add Laird Connectivity's external layer into a Yocto build. 
+   - Linux PC with a Yocto Build Environment. As a prerequisite, we are going to assume that you know how to setup a Yocto build environment. This is covered well on NXP's documentation (see i.MX_Yocto_Project_User's_Guide.pdf Rev. L5.4.70_2.3.0 — 31 December 2020); so we will not cover it here. We will focus on how to add Laird Connectivity's external layer into a Yocto build. 
 
-     Make sure your build environment is setup for **DISTRO=fsl-imx-wayland** and **MACHINE=imx8mpevk**.
+     Make sure your build environment is setup for *DISTRO=fsl-imx-wayland* and *MACHINE=imx8mpevk*.
 
 2. Setup
 
@@ -22,7 +22,7 @@
 
    
 
-3. Re-source your build environment. NOTE: For this tutorial, our project folder will be in **~/projects/lwb5p-imx8p** and the build directory is **build-imx8p-wayland**.
+3. Re-source your build environment. NOTE: For this tutorial, our project folder will be in *~/projects/lwb5p-imx8p* and the build directory is *build-imx8p-wayland*.
 
    ```
    cd ~/projects/lwb5p-imx8p
