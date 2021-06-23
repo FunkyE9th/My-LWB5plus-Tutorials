@@ -94,7 +94,21 @@
    
 
 
-9. Modify menuconfig
+9. Next edit the kernel
+
+   ```
+   cd ../build-imx8p-wayland 
+   bitbake -c menuconfig virtual/kernel
+   
+   ```
+
+   - Disable Wireless LAN drivers
+
+     
+
+   - Disable Bluetooth subsystem support and Wireless
+
+     
 
 10. build the project
 
