@@ -36,33 +36,55 @@
 
    
 
-5. Modify the local.conf file in ~/projects/
+5. Modify the ~/projects/imx8mp/conf/bblayers.conf file. Add the line below to the file.
 
    ```
-   cd ~/projects/lwb5p-imx8mp
-   source setup-environment build-imx8mp-wayland 
+   BBLAYERS += "${BSPDIR}/sources/meta-laird-cp" 
    ```
 
    
 
-6. Modify local.conf file
+6. Modify the  ~/projects/imx8mp/conf/local.conf file.  Add the line below to the file.
 
-7. Modify bblayers.comf 
+   ```
+   PREFERRED_PROVIDER_wpa-supplicant = "sterling-supplicant" 
+   PREFERRED_PROVIDER_wpa-supplicant-cli = "sterling-supplicant" 
+   PREFERRED_PROVIDER_wpa-supplicant-passphrase = "sterling-supplicant" 
+   
+   BBMASK += " \ 
+       meta-laird-cp/recipes-packages/openssl \ 
+       meta-laird-cp/recipes-packages/.*/.*openssl10.* \  
+   
+   PREFERRED_RPROVIDER_wireless-regdb-static = "wireless-regdb" 
+   LWB_REGDOMAIN = "US" 
+   ```
 
-8. Clone meta laird cp
+   
 
-9. Modify the bb iagem
+7. Clone meta-aird-cp layer into ~/projects/imx8mp/source directory
 
-10. Modify menuconfig
+   ```
+   cd ~/projects/imx8mp/source
+   git clone https://github.com/LairdCP/meta-laird-cp
+   ```
 
-11. build the project
+   
 
-12. create SD card
+8. Edit the ~/projects/imx8mp/source/meta-laird-cp/recipes-packages/images/sample-image-cp-lwb5plus.bb recipe by replacing *lwb5plus-sdio-div-firmware* with *lwb5plus-usb-sa-firmware*. Then save it as lwb5p-dongle.bb
 
-13. Boot device
 
-14. Test WiFi
 
-15. Test Bluetooth
 
-16. 
+9. Modify menuconfig
+
+10. build the project
+
+11. create SD card
+
+12. Boot device
+
+13. Test WiFi
+
+14. Test Bluetooth
+
+15. 
