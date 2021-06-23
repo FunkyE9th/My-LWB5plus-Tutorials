@@ -61,10 +61,10 @@
 
    
 
-7. Clone meta-aird-cp layer into ~/projects/imx8mp/source directory
+7. Clone meta-aird-cp layer into ~/projects/imx8mp/sources directory
 
    ```
-   cd ~/projects/imx8mp/source
+   cd ~/projects/imx8mp/sources
    git clone https://github.com/LairdCP/meta-laird-cp
    ```
 
