@@ -70,7 +70,7 @@
 
    
 
-8. Edit the ~/projects/imx8mp/sources/meta-laird-cp/recipes-packages/images/sample-image-cp-lwb5plus.bb recipe by replacing *lwb5plus-sdio-div-firmware* with *lwb5plus-usb-sa-firmware*. Then save it as lwb5p-dongle.bb
+8. Edit the ~/projects/imx8mp/sources/meta-laird-cp/recipes-packages/images/sample-image-cp-lwb5plus.bb recipe by replacing *lwb5plus-sdio-div-firmware* with *lwb5plus-usb-sa-firmware*. Then save it as lwb5p-usb.bb
 
 
 
