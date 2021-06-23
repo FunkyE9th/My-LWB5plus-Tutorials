@@ -44,7 +44,7 @@
 
    
 
-6. Modify the  ~/projects/imx8mp/build-imx8p-wayland/conf/local.conf file.  Add the line below to the file.
+6. Modify the  ~/projects/imx8mp/build-imx8p-wayland/conf/local.conf file.  Add the lines below to the file.
 
    ```
    PREFERRED_PROVIDER_wpa-supplicant = "sterling-supplicant" 
