@@ -70,9 +70,28 @@
 
    
 
-8. Edit the ~/projects/imx8mp/sources/meta-laird-cp/recipes-packages/images/sample-image-cp-lwb5plus.bb recipe by replacing *lwb5plus-sdio-div-firmware* with *lwb5plus-usb-sa-firmware*. Then save it as lwb5p-usb.bb
+8. Edit the ~/projects/imx8mp/sources/meta-laird-cp/recipes-packages/images/sample-image-cp-lwb5plus.bb recipe by replacing *lwb5plus-sdio-div-firmware* with *lwb5plus-usb-sa-firmware* and adding *laird-networkmanager*. Then save it as lwb5p-usb.bb. A snippet of the saved file is shown below.
 
+   ```
+   IMAGE_INSTALL += "\ 
+   iproute2 \ 
+   rng-tools \ 
+   ca-certificates \ 
+   tzdata \ 
+   alsa-utils \ 
+   htop \ 
+   ethtool \ 
+   iperf3 \ 
+   tcpdump \ 
+   iw \ 
+   kernel-module-lwb5p-backports-laird \ 
+   lwb5plus-sdio-div-firmware \ 
+   sterling-supplicant-lwb \ 
+   laird-networkmanager \ 
+   " 
+   ```
 
+   
 
 
 9. Modify menuconfig
