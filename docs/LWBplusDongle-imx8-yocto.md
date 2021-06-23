@@ -31,7 +31,7 @@
 4. Setup build configuration
 
    ```
-   DISTRO=fsl-imx-wayland MACHINE=imx8pevk source imx-setup-release.sh -b build-imx8p-wayland 
+   DISTRO=fsl-imx-wayland MACHINE=imx8mpevk source imx-setup-release.sh -b build-imx8p-wayland 
    ```
 
    
@@ -111,7 +111,13 @@
 
      
 
-10. build the project
+10. Build the image
+
+    ```
+    bitbake lwb5p-usb.bb
+    ```
+
+    
 
 11. create SD card
 
