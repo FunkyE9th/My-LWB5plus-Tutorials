@@ -54,7 +54,7 @@
    BBMASK += " \ 
        meta-laird-cp/recipes-packages/openssl \ 
        meta-laird-cp/recipes-packages/.*/.*openssl10.* \ 
-       ""
+       "
    
    PREFERRED_RPROVIDER_wireless-regdb-static = "wireless-regdb" 
    LWB_REGDOMAIN = "US" 
