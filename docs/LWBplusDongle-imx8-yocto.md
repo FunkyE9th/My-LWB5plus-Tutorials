@@ -36,7 +36,7 @@
 
    
 
-5. Modify the ~/projects/imx8mp/conf/bblayers.conf file. Add the line below to the file.
+5. Modify the ~/projects/imx8mp/build-imx8p-wayland/conf/bblayers.conf file. Add the line below to the file.
 
    ```
    BBLAYERS += "${BSPDIR}/sources/meta-laird-cp" 
@@ -44,7 +44,7 @@
 
    
 
-6. Modify the  ~/projects/imx8mp/conf/local.conf file.  Add the line below to the file.
+6. Modify the  ~/projects/imx8mp/build-imx8p-wayland/conf/local.conf file.  Add the line below to the file.
 
    ```
    PREFERRED_PROVIDER_wpa-supplicant = "sterling-supplicant" 
