@@ -62,7 +62,7 @@
 
    
 
-7. Clone meta-aird-cp layer into ~/projects/imx8mp/sources directory
+7. Clone the meta-laird-cp layer into ~/projects/imx8mp/sources directory
 
    ```
    cd ~/projects/imx8mp/sources
@@ -111,7 +111,7 @@
 
      
 
-   - Disable Bluetooth subsystem support and Wireless. Navigate to *Networking support* and disable *Bluetooth subsystem* support and *Wireless*.
+   - Disable Bluetooth subsystem support and Wireless. Navigate to *Networking support* and disable *Bluetooth subsystem* *support* and *Wireless*.
 
      
 
@@ -127,10 +127,10 @@
 
     
 
-11. Flash image into SD card
+11. Flash image into SD card. Note for this particular tutorial the SD card is on /dev/mmcblk0. It may be different for your setup; so make sure change the command below per your setup.
 
     ```
-    
+    bzip2 -dc ~/projects/imx8mp/build-imx8p-wayland/tmp/deploy/images/imx8mpevk/mylwb5p-imx8mpevk.wic.bz2 | sudo dd bs=512K iflag=fullblock oflag=direct status=progress conv=fsync of=/dev/mmcblk0 
     ```
 
     
