@@ -135,7 +135,7 @@
 
     
 
-12. Boot device and login as root
+12. Connect EVK to Serial Terminal via J23 (115200, N, 8, 1). Boot device and login as root
 
     
 
