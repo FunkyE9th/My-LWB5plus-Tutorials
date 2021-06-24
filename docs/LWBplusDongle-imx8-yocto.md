@@ -127,7 +127,7 @@
 
     
 
-11. Flash image into SD card. Note for this particular tutorial the SD card is on /dev/mmcblk0. It may be different for your setup; so make sure change the command below per your setup.
+11. Flash image into SD card. Note for this particular tutorial the SD card is on /dev/mmcblk0. It may be different for your setup; so make sure you change the command below per your setup.
 
     ```
     bzip2 -dc ~/projects/imx8mp/build-imx8p-wayland/tmp/deploy/images/imx8mpevk/mylwb5p-imx8mpevk.wic.bz2 | sudo dd bs=512K iflag=fullblock oflag=direct status=progress conv=fsync of=/dev/mmcblk0 
@@ -135,10 +135,24 @@
 
     
 
-12. Boot device
+12. Boot device and login as root
 
-13. Test WiFi
+    
 
-14. Test Bluetooth
+13. Test WiFi. Create a nmcli profile that will connect to your AP. Then connect to the AP and ping a website.
 
-15. 
+    ```
+    nmcli con add con-name Cisco ifname wlan0 type wifi ssid "YourAP" wifi-sec.key-mgmt wpa-psk wifi-sec.psk "YourPassord" 
+    nmcli c u  "YourAP"
+    ping www.lairdconnect.com
+    ```
+
+    
+
+14. Test Bluetooth. Launch *bluetoothctl*. Then on the bluetoothctl prompt, *power on* and *scan on*
+
+    
+
+    ![](../images/dongle/BtScan.PNG)
+
+    
