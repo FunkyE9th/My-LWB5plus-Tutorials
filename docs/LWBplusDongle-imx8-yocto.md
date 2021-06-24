@@ -105,6 +105,8 @@
 
    - Disable Wireless LAN drivers
 
+     ![](../images/dongle/wlan-kernel-setting.PNG)
+
      
 
    - Disable Bluetooth subsystem support and Wireless
