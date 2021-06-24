@@ -103,13 +103,17 @@
    
    ```
 
-   - Disable Wireless LAN drivers
+   - Disable Wireless LAN drivers. Navigate to *Device Drivers* -> *Network device support* and disable *Wireless LAN* .
+
+     
 
      ![](../images/dongle/wlan-kernel-setting.PNG)
 
      
 
-   - Disable Bluetooth subsystem support and Wireless
+   - Disable Bluetooth subsystem support and Wireless. Navigate to *Networking support* and disable *Bluetooth subsystem* support and *Wireless*.
+
+     
 
      ![](../images/dongle/bt-wireless-kernel-setting.PNG)
 
@@ -118,12 +122,18 @@
 10. Build the image
 
     ```
-    bitbake lwb5p-usb
+    bitbake mylwb5p
     ```
 
     
 
-11. create SD card
+11. Flash image into SD card
+
+    ```
+    
+    ```
+
+    
 
 12. Boot device
 
