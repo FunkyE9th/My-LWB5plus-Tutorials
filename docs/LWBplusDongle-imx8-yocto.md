@@ -111,6 +111,8 @@
 
    - Disable Bluetooth subsystem support and Wireless
 
+     ![](../images/dongle/bt-wireless-kernel-setting.PNG)
+
      
 
 10. Build the image
