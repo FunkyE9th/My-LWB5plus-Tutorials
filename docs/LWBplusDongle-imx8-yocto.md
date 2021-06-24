@@ -2,7 +2,7 @@
 
 
 
- This tutorial will show you how to integrate the LWB5+ Dongle into an i.MX 8M Plus Yocto platform.
+ This tutorial will show you how to integrate the LWB5+ Dongle on an i.MX 8M Plus Yocto platform.
 
 1. Required Tools
 
@@ -149,7 +149,7 @@
 
     
 
-14. Test Bluetooth. Launch *bluetoothctl*. Then on the bluetoothctl prompt, *power on* and *scan on*
+14. Test Bluetooth. Launch *bluetoothctl*. Then on the *bluetoothctl* prompt, type *power on* and then *scan on*
 
     
 
