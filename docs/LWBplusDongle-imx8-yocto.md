@@ -145,7 +145,7 @@
 
     ```
     nmcli con add con-name "YourProfile" ifname wlan0 type wifi ssid "YourAP" wifi-sec.key-mgmt wpa-psk wifi-sec.psk "YourPassword" 
-    nmcli c u "YourConnectionName" 
+    nmcli c u "YourProfile" 
     ping www.lairdconnect.com
     ```
 
