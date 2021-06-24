@@ -141,7 +141,7 @@
 
     
 
-13. Test WiFi. Create a nmcli profile that will connect to your AP. Then connect to the AP and ping a website.
+13. Test WiFi. Create a connection profile with nmcli. Then connect to the AP and ping a website.
 
     ```
     nmcli con add con-name Cisco ifname wlan0 type wifi ssid "YourAP" wifi-sec.key-mgmt wpa-psk wifi-sec.psk "YourPassord" 
