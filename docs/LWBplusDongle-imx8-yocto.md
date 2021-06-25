@@ -20,6 +20,8 @@
 
 3. Download the i.MX Yocto Project Community BSP recipe layers
 
+   **Reminder:** Prior to proceeding, make sure the required host packages and repo utility are installed. Git must also configured properly. Refer to *i.MX_Yocto_Project_User's_Guide.pdf, Rev. L5.4.70_2.3.0 — 31 December 2020* for details.
+
    ```
    mkdir ~/projects/imx8mp
    cd ~/projects/imx8mp
