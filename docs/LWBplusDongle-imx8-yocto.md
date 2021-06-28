@@ -97,7 +97,7 @@
    
 
 
-9. Next go into the build directory and edit the kernel
+9. Next go to the build directory and edit the kernel
 
    ```
    cd ../build-imx8p-wayland 
