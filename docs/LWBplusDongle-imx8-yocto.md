@@ -169,5 +169,5 @@
 - The modified files on this tutorial
   - [bblayers.conf](../src/dongle/bblayers.conf)
   - [local.conf](../src/dongle/local.conf)
-  - [mylwb5p.bb](../src/dongle/mlwb5p.bb)
+  - [mylwb5p.bb](../src/dongle/mylwb5p.bb)
 - https://www.nxp.com/imx8mplusevk
