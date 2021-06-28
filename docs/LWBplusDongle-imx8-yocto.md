@@ -12,7 +12,7 @@
 
 2. Setup
 
-   We will flash our image into a micro SD card. If you prefer, you can use the onboard eMMC instead of an SD card, but for this tutorial we'll use an SD card. The LWB5+ Dongle will plug into J7. Power will be applied via J5, and J23 will be used to connect to a serial terminal (115200, N, 8, 1). If the build works, the drivers will automatically load on power up. We will then connect to an AP and do a ping to demonstrate that WiFi works. For Bluetooth, we will do a scan to show that the module can detect devices that are discoverable or advertising.
+   We will flash our image into a micro SD card. If you prefer, you can use the onboard eMMC, but for this tutorial. we will boot from a micro SD card. The LWB5+ Dongle will plug into J7. Power will be applied via J5, and J23 will be used to connect to a serial terminal (115200, N, 8, 1). If the build works, the drivers will automatically load on power up. We will then connect to an AP and do a ping to demonstrate that WiFi works. For Bluetooth, we will do a scan to show that the module can detect devices that are discoverable or advertising.
 
    ![](../images/dongle/Setup.PNG)
 
@@ -97,7 +97,7 @@
    
 
 
-9. Next go into the build directory edit the kernel
+9. Next go into the build directory and edit the kernel
 
    ```
    cd ../build-imx8p-wayland 
@@ -148,8 +148,10 @@
     ```
     nmcli con add con-name "YourProfile" ifname wlan0 type wifi ssid "YourAP" wifi-sec.key-mgmt wpa-psk wifi-sec.psk "YourPassword" 
     nmcli c u "YourProfile" 
-    ping www.lairdconnect.com
+    ping www.google.com
     ```
+
+    ![](../images/dongle/ping.png)
 
     
 
@@ -160,3 +162,12 @@
     ![](../images/dongle/BtScan.PNG)
 
     
+
+**References:**
+
+- https://github.com/LairdCP/meta-laird-cp
+- The modified files on this tutorial
+  - [bblayers.conf](../src/dongle/bblayers.conf)
+  - [local.conf](../src/dongle/local.conf)
+  - [mylwb5p.bb](../src/dongle/mlwb5p.bb)
+- https://www.nxp.com/imx8mplusevk
